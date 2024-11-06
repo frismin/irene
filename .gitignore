@@ -1,0 +1,9 @@
+.DS_Store
+/.gradle
+/.idea
+local.properties
+/utilities/build
+/com/app/prj/common/build
+/com/app/prj/testarea/android/build
+/com/app/prj/testarea/ios/build
+/gradle

@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'rcs'
+version = '1.0'
+apply from: '../../../../deps.gradle'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation commonDependencies
+    implementation project(':utilities')
+}
+
+test {
+    useTestNG() {
+        dependsOn cleanTest
+        useDefaultListeners = true
+    }
+    testLogging {
+        events 'PASSED', 'SKIPPED', 'FAILED'
+    }
+}

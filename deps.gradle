@@ -1,0 +1,16 @@
+ext {
+    commonDependencies = [
+
+            //Dependencies to manage TestNG
+            'org.testng:testng:latest.release',
+
+            //Dependencies to manage Appium
+            'io.appium:java-client:latest.release',
+
+            //Dependencies to manage Selenium
+            'org.seleniumhq.selenium:selenium-java:latest.release',
+
+            //Dependencies to manage Logging
+            'ch.qos.logback:logback-classic:latest.release'
+    ]
+}
